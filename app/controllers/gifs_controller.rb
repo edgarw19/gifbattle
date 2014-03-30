@@ -9,6 +9,10 @@ class GifsController < ApplicationController
 		end
 
 
+	def index
+		@gifs = Gif.order("cached_votes_up DESC").paginate(:page => params[:page])
+	end
+
 	end
 
 	def new
