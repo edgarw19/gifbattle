@@ -18,14 +18,13 @@
 
 <div id="gifs" align="center">
     <!-- GIF #1 -->
-    <img id="gif1" src="<%= @gif1.link%>">
-    <p><%=link_to "Upvote", like_gif_path(@gif1), method: :put%></p>
+    <a href="/gifs/1/like" data-method="put" rel="nofollow"><img id="gif1" src="<%= @gif1.link%>"></a>
+
 
     <b id="VS"> VS </b>
 
     <!-- GIF #2 -->
-    <img id="gif2" src="<%= @gif2.link%>"><p><%=link_to "Upvote", like_gif_path(@gif2), method: :put%></p>
-
+    <a href="/gifs/2/like" data-method="put" rel="nofollow"><img id="gif2" src="<%= @gif2.link%>"></a>
 
 
 </div>

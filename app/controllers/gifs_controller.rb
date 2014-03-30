@@ -1,13 +1,16 @@
 class GifsController < ApplicationController
-  def choose
-  	@gif1 = Gif.first(:order => 'Random()')
-  	@gif2 = Gif.first(:order => 'Random() * .9')
-  end
-  def new
-  	@gif = Gif.new
-  end
+	def choose
+		@gif1 = Gif.first(:order => 'Random()')
+		@gif2 = Gif.first(:order => 'Random()')
 
-  def create
+
+	end
+
+	def new
+		@gif = Gif.new
+	end
+
+	def create
 		@gif = Gif.new(params[:gif])
 		if @gif.save
 			redirect_to root_path
@@ -16,7 +19,10 @@ class GifsController < ApplicationController
 		end
 	end
 
-  def like
+	def show
+	end
+
+	def like
 		@gif = Gif.find(params[:id])
 		@gif.votes.up
 		redirect_to gif_path
