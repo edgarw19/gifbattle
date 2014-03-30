@@ -1,7 +1,12 @@
 class GifsController < ApplicationController
+	
 	def choose
-		@gif1 = Gif.first(:order => 'Random()')
-		@gif2 = Gif.first(:order => 'Random()')
+		rand_id = rand(Gif.count)
+		@gif1 = Gif.first(:conditions => [ "id >= ?", rand_id])
+		@gif2 = Gif.first(:conditions => [ "id >= ?", rand_id])
+		if @gif1.link == @gif2.link 
+			@gif2 = Gif.first(:order => 'Random()')
+		end
 
 
 	end
