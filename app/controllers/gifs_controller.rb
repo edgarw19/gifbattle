@@ -11,7 +11,7 @@ class GifsController < ApplicationController
 
 
 	def index
-		@gifs = Gif.order("up_votes DESC").limit(10)
+		@gifs = Gif.order("cached_votes_up DESC").limit(10)
 	end
 
 	

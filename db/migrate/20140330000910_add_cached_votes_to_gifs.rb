@@ -13,7 +13,7 @@ class AddCachedVotesToGifs < ActiveRecord::Migration
     add_index  :gifs, :cached_weighted_score
 
     # Uncomment this line to force caching of existing votes
-     Post.find_each(&:update_cached_votes)
+     #Post.find_each(&:update_cached_votes)
   end
 
   def self.down

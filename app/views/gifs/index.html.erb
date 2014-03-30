@@ -5,9 +5,11 @@
 <div class="container; offset1; ">
 	<div style="border-bottom: 2px gray solid">
 
-		<img id="gif1" src="<%= @gif1.link%>"></a>
+		<img id="gif1" src="<%= gif.link%>"></a>
 		
 		<%= gif.likes.size %> 
 	</div>
 </div>
 <% end %>
+
+<%= link_to "home", root_path %>
