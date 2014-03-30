@@ -1,6 +1,7 @@
 class GifsController < ApplicationController
   def choose
   	@gif1 = Gif.first(:order => 'Random()')
+  	@gif2 = Gif.first(:order => 'Random() * .9')
   end
   def new
   	@gif = Gif.new

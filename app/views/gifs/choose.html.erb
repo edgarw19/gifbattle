@@ -19,11 +19,13 @@
 <div id="gifs" align="center">
     <!-- GIF #1 -->
     <img id="gif1" src="<%= @gif1.link%>">
+    <p><%=link_to "Upvote", like_gif_path(@gif1), method: :put%></p>
 
     <b id="VS"> VS </b>
 
     <!-- GIF #2 -->
-    <img id="gif2" src="http://s3-ec.buzzfed.com/static/enhanced/webdr03/2013/5/30/18/anigif_enhanced-buzz-898-1369953089-15.gif">
+    <img id="gif2" src="<%= @gif2.link%>"><p><%=link_to "Upvote", like_gif_path(@gif2), method: :put%></p>
+
 
 
 </div>
