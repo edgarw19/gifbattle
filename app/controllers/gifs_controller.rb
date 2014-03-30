@@ -7,13 +7,14 @@ class GifsController < ApplicationController
 		if @gif1.link == @gif2.link 
 			@gif2 = Gif.first(:order => 'Random()')
 		end
+	end
 
 
 	def index
-		@gifs = Gif.order("cached_votes_up DESC").paginate(:page => params[:page])
+		@gifs = Gif.order("up_votes DESC").limit(10)
 	end
 
-	end
+	
 
 	def new
 		@gif = Gif.new

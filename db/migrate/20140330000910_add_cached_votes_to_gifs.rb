@@ -1,5 +1,5 @@
 class AddCachedVotesToGifs < ActiveRecord::Migration
-  def change
+
   	def self.up
     add_column :gifs, :cached_votes_total, :integer, :default => 0
     add_column :gifs, :cached_votes_score, :integer, :default => 0
@@ -13,7 +13,7 @@ class AddCachedVotesToGifs < ActiveRecord::Migration
     add_index  :gifs, :cached_weighted_score
 
     # Uncomment this line to force caching of existing votes
-    # Post.find_each(&:update_cached_votes)
+     Post.find_each(&:update_cached_votes)
   end
 
   def self.down
@@ -23,5 +23,5 @@ class AddCachedVotesToGifs < ActiveRecord::Migration
     remove_column :gifs, :cached_votes_down
     remove_column  :gifs, :cached_weighted_score
   end
-  end
+
 end

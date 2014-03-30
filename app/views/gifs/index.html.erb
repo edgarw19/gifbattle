@@ -1,0 +1,13 @@
+
+
+<% @gifs.each do |gif| %>
+
+<div class="container; offset1; ">
+	<div style="border-bottom: 2px gray solid">
+
+		<img id="gif1" src="<%= @gif1.link%>"></a>
+		
+		<%= gif.likes.size %> 
+	</div>
+</div>
+<% end %>
