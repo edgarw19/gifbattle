@@ -1,8 +1,10 @@
+<head>
+   <link href='http://fonts.googleapis.com/css?family=Salsa' rel='stylesheet' type='text/css'>
+ </head>
 <%= form_for @gif do |f| %>
 <% if @gif.errors.any? %>
 <div id="error_explanation">
-  <h2><%= pluralize(@gif.errors.count, "error") %> prohibited
-    this post from being saved:</h2>
+  <h2 style ="font-family:Salsa;"><%= pluralize(@gif.errors.count, "whoopsies") %> stopped the cute gif from being uploaded!</h2>
     <ul>
       <% @gif.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>

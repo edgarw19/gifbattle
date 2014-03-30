@@ -26,7 +26,7 @@ a, a:visited {
 
 /* title */
 #title{
-    font: 72px 'Bebas', Arial, sans-serif;
+    font: 72px 'Salsa', Arial, sans-serif;
     color: #9FD6D2;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -40,7 +40,7 @@ a, a:visited {
 }
 
 #VS{
-    font: 60px 'Bebas', Arial, sans-serif;
+    font: 60px 'Salsa', Arial, sans-serif;
     color: #9FD6D2;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -61,6 +61,13 @@ a, a:visited {
     border-radius: 25px;
     width: 350px;
     height: 275px
+}
+
+.floatleft{
+    {
+float: left;
+margin: 0 10px 10px 0;
+clear: right;
 }
 
 
