@@ -1,6 +1,7 @@
 class GifsController < ApplicationController
   def choose
   	@gif1 = Gif.first(:order => 'Random()')
+  	@gif2 = Gif.first(:order => 'Random() * .9')
   end
   def new
   	@gif = Gif.new
@@ -17,8 +18,8 @@ class GifsController < ApplicationController
 
   def like
 		@gif = Gif.find(params[:id])
-		@gif.liked_by current_user
-		redirect_to questions_path
+		@gif.votes.up
+		redirect_to gif_path
 	end
 
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140330035550) do
+ActiveRecord::Schema.define(:version => 20140330033656) do
 
   create_table "gifs", :force => true do |t|
     t.text     "link"
