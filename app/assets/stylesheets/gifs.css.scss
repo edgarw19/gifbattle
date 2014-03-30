@@ -13,9 +13,11 @@
 html {
 
 body{
-    background-color: #D0ECEA;
+    background-color: #FFFFFF;
 }
-
+a, a:link {
+    color: #FFFFFF;
+}
 a, a:visited {
     outline:none;
     color:#43819b;
@@ -28,10 +30,10 @@ a, a:visited {
 /* title */
 #title{
     font: 72px 'Salsa', Arial, sans-serif;
-    color: #9FD6D2;
+    color: #FFFFFF;
     padding-bottom: 15px;
     padding-top: 15px;
-    background-color: #8B7A5E;
+    background-color: #9EEAC7;
 }
 
 #subheading{
@@ -42,7 +44,7 @@ a, a:visited {
 
 #VS{
     font: 60px 'Salsa', Arial, sans-serif;
-    color: #9FD6D2;
+    color: #D45556;
     padding-bottom: 15px;
     padding-top: 15px;
     position: relative; bottom: 0px
@@ -63,7 +65,16 @@ a, a:visited {
     width: 350px;
     height: 275px
 }
+#upload{ 
+    font: 20px 'Salsa', Arial, sans-serif;
+    color: #D45556;
 
+}
+#top{ 
+    font: 20px 'Salsa', Arial, sans-serif;
+    color: #D45556;
+
+}
 #newlink {
 font: 20px 'Salsa', Arial, sans-serif;
  }
