@@ -1,31 +1,34 @@
 <html>
-<div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="jumbotron">
-				<h1 align="center">
-					GIF BATTLE
-				</h1>
+    <head>
 
-				<p>
-				</p>
-			</div>
-		</div>
-	</div>
+    </head>
+
+<br><br>
+
+<body>
+<h1 id="title" align="center">
+    Cute Battle
+</h1>
+
+<!--<h2 id="subheading" align="center">
+    this is a subheading yup subheading goes here
+</h2>-->
+
+<br><br>
+
+<div id="gifs" align="center">
+    <!-- GIF #1 -->
+    <img id="gif1" src="http://s3-ec.buzzfed.com/static/enhanced/webdr01/2013/5/30/14/anigif_enhanced-buzz-2385-1369939649-17.gif">
+
+    <b id="VS"> VS </b>
+
+    <!-- GIF #2 -->
+    <img id="gif2" src="http://s3-ec.buzzfed.com/static/enhanced/webdr03/2013/5/30/18/anigif_enhanced-buzz-898-1369953089-15.gif">
+
 </div>
-</div>
-<div align="center">
-<div style="float-left">
-	<img src="http://31.media.tumblr.com/0d21023e21cae07065c10931a67e2415/tumblr_n346nz4zyh1tv7yt8o1_250.gif">
-	<p><%= gif.likes.size %> | <%=link_to "Upvote", like_question_path(question), method: :put%></p>
-</div>
-<div style="float-left">
-<h3> VS</h3>
-</div>
-<div class="float-left">
-	<img src="http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cats.jpg">
-</div>
-</div>
+
+</body>
 <%= link_to "Upload link", gifs_new_path %>
 
 </html>
+

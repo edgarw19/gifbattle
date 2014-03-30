@@ -1,7 +1,7 @@
 Cutegifs::Application.routes.draw do
   get "gifs/new"
 
-  root :to => 'static#choose'
+  root :to => 'gifs#choose'
   get "static/result"
   resources :gifs do
     member do

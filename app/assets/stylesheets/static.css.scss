@@ -2,10 +2,77 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+// Place all the styles related to the gifs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*-------------------------
+    Simple reset
+--------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/*-------------------------
+    General Styles
+--------------------------*/
+
+html{
+}
+
+body{
+    background-color: #D0ECEA;
+}
+
+a, a:visited {
+    outline:none;
+    color:#43819b;
+}
+
+/*-------------------------
+    Main Area
+--------------------------*/
+
+/* title */
+#title{
+    font: 60px 'Bebas', Arial, sans-serif;
+    color: #9FD6D2;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #8B7A5E;
+}
+
+#subheading{
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+
+#VS{
+    font: 60px 'Bebas', Arial, sans-serif;
+    color: #9FD6D2;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative; bottom: 100px
+}
+
+#gif1 {
+    position: relative; 
+    right: 25px; 
+    border-radius: 25px;
+    width: 350px;
+    height: 275px
+}
+
+#gif2 {
+    position: relative; 
+    left: 25px; 
+    border-radius: 25px;
+    width: 350px;
+    height: 275px
+}
 
 
- img {
- height: 275px;
- width: 275px;
 
- }
