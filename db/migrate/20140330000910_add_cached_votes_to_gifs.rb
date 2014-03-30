@@ -1,9 +1,9 @@
 class AddCachedVotesToGifs < ActiveRecord::Migration
 
   	def self.up
-    add_column :gifs, :cached_votes_total, :integer, :default => 0
+    add_column :gifs, :cached_votes_total, :integer, :default => 1
     add_column :gifs, :cached_votes_score, :integer, :default => 0
-    add_column :gifs, :cached_votes_up, :integer, :default => 0
+    add_column :gifs, :cached_votes_up, :integer, :default => 1
     add_column :gifs, :cached_votes_down, :integer, :default => 0
     add_column :gifs, :cached_weighted_score, :integer, :default => 0
     add_index  :gifs, :cached_votes_total

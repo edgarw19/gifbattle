@@ -1,0 +1,48 @@
+<html>
+    <head>
+      <link href='http://fonts.googleapis.com/css?family=Salsa' rel='stylesheet' type='text/css'>
+    </head>
+
+<br><br>
+
+<h1><%= @gif.agree %> users agree with you </h1>
+
+<%= @gif1.agree %>
+<%= @gif.agree %>
+<%= @gif2.agree %>
+
+<body align="center">
+
+<!--<h2 id="subheading" align="center">
+    this is a subheading yup subheading goes here
+</h2>-->
+
+<br>
+
+<div id="gifs" align="center">
+    <!-- GIF #1 -->
+
+    <a href="/gifs/<%=@gif1.id%>/like" data-method="put" rel="nofollow"><img id="gif1" src="<%= @gif1.link%>"></a>
+
+
+    <b id="VS"> VS </b>
+
+    <!-- GIF #2 -->
+
+    <a href="/gifs/<%=@gif2.id%>/like" data-method="put" rel="nofollow"><img id="gif2" src="<%= @gif2.link%>"></a>
+
+
+
+
+</div>
+
+
+
+</body>
+
+<%= link_to "Upload a new gif", gifs_new_path %>
+<%= link_to "Top GIFS", gifs_path %>
+
+
+</html>
+

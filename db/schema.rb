@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140330033656) do
+ActiveRecord::Schema.define(:version => 20140330084412) do
 
   create_table "gifs", :force => true do |t|
     t.text     "link"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20140330033656) do
     t.integer  "cached_votes_up",       :default => 0
     t.integer  "cached_votes_down",     :default => 0
     t.integer  "cached_weighted_score", :default => 0
+    t.float    "agree"
   end
 
   add_index "gifs", ["cached_votes_down"], :name => "index_gifs_on_cached_votes_down"
@@ -30,6 +31,11 @@ ActiveRecord::Schema.define(:version => 20140330033656) do
   add_index "gifs", ["cached_votes_total"], :name => "index_gifs_on_cached_votes_total"
   add_index "gifs", ["cached_votes_up"], :name => "index_gifs_on_cached_votes_up"
   add_index "gifs", ["cached_weighted_score"], :name => "index_gifs_on_cached_weighted_score"
+
+  create_table "sessions", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "votes", :force => true do |t|
     t.integer  "votable_id"
