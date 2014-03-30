@@ -4,7 +4,7 @@ class GifsController < ApplicationController
 		rand_id = rand(Gif.count)
 		@gif1 = Gif.first(:conditions => [ "id >= ?", rand_id])
 		@gif2 = Gif.first(:conditions => [ "id >= ?", rand_id])
-		if @gif1.link == @gif2.link 
+		if @gif1.id == @gif2.id 
 			@gif2 = Gif.first(:order => 'Random()')
 		end
 	end
